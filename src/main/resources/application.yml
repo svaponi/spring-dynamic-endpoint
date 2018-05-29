@@ -1,0 +1,11 @@
+server.port: 8080
+
+info:
+  id: @project.groupId@:@project.artifactId@:@project.version@
+
+spring:
+  profiles.include: unsecured
+  boot.admin:
+    url: http://localhost:9001
+    username: admin
+    password: admin
